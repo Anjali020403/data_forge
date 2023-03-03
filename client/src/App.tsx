@@ -24,9 +24,6 @@ import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
 import { Login,
          Home,
-         Article,
-         Reviews,
-         Profile,
 } from "pages";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
@@ -140,6 +137,8 @@ function App() {
           routerProvider={routerProvider}
           authProvider={authProvider}
           LoginPage={Login}
+          DashboardPage={Home}
+          
         />
       </RefineSnackbarProvider>
     </ColorModeContextProvider>
